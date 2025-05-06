@@ -58,4 +58,14 @@ const myUrl2 = new URL('https://www.example.com/pathname?search=test');
 
 myUrl2.searchParams.append('newParam', 'value');  
 
-//console.log(myUrl2.href); 
+//console.log(myUrl2.href);
+
+
+
+const url = new URL('https://www.example.com/pathname?search=test#hash');
+
+console.log(url.protocol); // 'https:'
+console.log(url.hostname); // 'www.example.com'
+console.log(url.pathname); // '/pathname'
+console.log(url.search);   // '?search=test'
+console.log(url.hash);     // '#hash'
